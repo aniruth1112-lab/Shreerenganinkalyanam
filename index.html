@@ -13,7 +13,10 @@ body{font-family:'Montserrat',sans-serif;background:var(--ivory);color:var(--gra
 
 .thoranam{width:100%;display:flex;justify-content:center;align-items:flex-start;padding:0;overflow:hidden;line-height:0;}
 .thoranam-svg{width:100%;max-width:1200px;}
-<audio autoplay loop hidden>
+<source src="assets/song.mp3" type="audio/mpeg">
+  <button onclick="document.getElementById('bgm').play()">Play Music</button>
+
+<audio id="bgm" loop>
   <source src="song.mp3" type="audio/mpeg">
 </audio>
 #hero{position:relative;min-height:100vh;display:flex;flex-direction:column;background:#111;overflow:hidden;}
